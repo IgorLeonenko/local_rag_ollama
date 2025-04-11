@@ -33,4 +33,4 @@ COPY . .
 EXPOSE 8501
 
 # Command to run the Streamlit app
-CMD ollama serve & sleep 3 && streamlit run local_rag_agent.py
+CMD ollama serve & sleep 3 && streamlit run rag.py

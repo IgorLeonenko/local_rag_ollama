@@ -175,9 +175,9 @@ if st.session_state.response_content:
                     # SMTP configuration
                     smtp_server = "smtp.gmail.com"
                     smtp_port = 587
-                    smtp_user = "icovers88@gmail.com"  # Replace with your email
+                    smtp_user = ""  # Replace with your email
                     smtp_password = (
-                        "fhuj vkpz hksy vnwv"  # Replace with your app password
+                        ""  # Replace with your app password
                     )
 
                     # Create email message

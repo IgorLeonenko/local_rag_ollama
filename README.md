@@ -42,7 +42,7 @@ COLLECTION_NAME = ""
 
 6. Run the AI RAG Agent
 ```bash
-python local_rag_agent.py
+python rag.py
 ```
 
 ### Docker:
