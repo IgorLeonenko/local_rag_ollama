@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  qdrant:
+    image: qdrant/qdrant
+    container_name: qdrant
+    ports:
+      - "6333:6333"  # Expose Qdrant on port 6333
+    volumes:
+      - qdrant_data:/qdrant/storage  # Persist Qdrant data across restarts
+
+  app:
+    build: .
+    container_name: local-rag-agent
+    ports:
+      - "8501:8501"
+    depends_on:
+      - qdrant
+    environment:
+      - PYTHONUNBUFFERED=1
+
+volumes:
+  qdrant_data:

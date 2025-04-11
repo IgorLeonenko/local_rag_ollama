@@ -1,0 +1,6 @@
+phidata
+qdrant-client
+ollama
+openai
+streamlit
+PyPDF2
